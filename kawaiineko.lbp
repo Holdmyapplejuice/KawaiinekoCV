@@ -1,0 +1,3905 @@
+{
+    "version": 3,
+    "rootSampleDirectory": "/home/owner/Music/kawaiineko CV/",
+    "workingDirectory": "",
+    "projectName": "kawaiineko",
+    "cacheDirectory": "kawaiineko.lbp.caches",
+    "labelerConf": {
+        "name": "utau-singer.default",
+        "version": 25,
+        "serialVersion": 2,
+        "singleFile": false,
+        "extension": "ini",
+        "defaultInputFilePath": null,
+        "displayedName": {
+            "en": "UTAU singer labeler",
+            "zh": "UTAU singer 标注器",
+            "ja": "UTAU singer ラベラー",
+            "ko": "UTAU singer 라벨러"
+        },
+        "author": "sdercolin",
+        "email": "sder.colin@gmail.com",
+        "description": {
+            "en": "Default labeler for UTAU singer (multiple pitches). `oto.ini` files under every folder that contains sample voices will be created/edited. Please set the sample directory to the root directory of the singer.",
+            "zh": "用于 UTAU singer（多音阶）的默认标注器。会在包含采样音频的每个文件夹下创建/编辑 `oto.ini` 文件。请将采样目录设置为歌手的根目录。",
+            "ja": "UTAU 音源（多音階）のデフォルトラベラーです。サンプル音声を含むフォルダーの中に `oto.ini` ファイルを作成/編集します。サンプルディレクトリを歌手のルートディレクトリに設定してください。",
+            "ko": "기본 내장된 UTAU 다음계 음원용 라벨러에요. 샘플 폴더는 가수의 루트 폴더로 지정해 주세요. 샘플이 존재하는 모든 하위 폴더마다 `oto.ini`가 생성되며, 라벨러를 통해 편집할 수 있게 됩니다."
+        },
+        "website": "https://github.com/sdercolin/vlabeler/tree/main/resources/common/labelers/utau-singer-labeler",
+        "categoryTag": "UTAU",
+        "displayOrder": 0,
+        "continuous": false,
+        "allowSameNameEntry": false,
+        "defaultEntryName": null,
+        "defaultValues": [
+            100.0,
+            400.0,
+            300.0,
+            200.0,
+            100.0,
+            500.0
+        ],
+        "defaultExtras": null,
+        "fields": [
+            {
+                "name": "fixed",
+                "label": {
+                    "en": "Fixed",
+                    "zh": "固",
+                    "ja": "子",
+                    "ko": "고정"
+                },
+                "color": "#1b51ff",
+                "height": 0.5,
+                "dragBase": false,
+                "filling": "left",
+                "constraints": [
+                    {
+                        "min": 3,
+                        "max": null
+                    }
+                ],
+                "shortcutIndex": 3,
+                "replaceStart": false,
+                "replaceEnd": false,
+                "triggerPostEditNext": false,
+                "triggerPostEditDone": true
+            },
+            {
+                "name": "preu",
+                "label": {
+                    "en": "Preu",
+                    "zh": "先",
+                    "ja": "先",
+                    "ko": "선행"
+                },
+                "color": "#ff1a45",
+                "height": 0.6667,
+                "dragBase": true,
+                "filling": null,
+                "constraints": [
+                    {
+                        "min": 3,
+                        "max": 0
+                    }
+                ],
+                "shortcutIndex": 2,
+                "replaceStart": false,
+                "replaceEnd": false,
+                "triggerPostEditNext": false,
+                "triggerPostEditDone": true
+            },
+            {
+                "name": "ovl",
+                "label": {
+                    "en": "Ovl",
+                    "zh": "重",
+                    "ja": "オ",
+                    "ko": "오버"
+                },
+                "color": "#7fff39",
+                "height": 0.8333,
+                "dragBase": false,
+                "filling": null,
+                "constraints": [
+                    {
+                        "min": null,
+                        "max": 0
+                    }
+                ],
+                "shortcutIndex": 1,
+                "replaceStart": false,
+                "replaceEnd": false,
+                "triggerPostEditNext": false,
+                "triggerPostEditDone": true
+            },
+            {
+                "name": "left",
+                "label": {
+                    "en": "Left",
+                    "zh": "左",
+                    "ja": "左",
+                    "ko": "왼쪽"
+                },
+                "color": "#9c7212",
+                "height": 0.9,
+                "dragBase": false,
+                "filling": "start",
+                "constraints": [
+                ],
+                "shortcutIndex": null,
+                "replaceStart": true,
+                "replaceEnd": false,
+                "triggerPostEditNext": false,
+                "triggerPostEditDone": false
+            }
+        ],
+        "extraFieldNames": null,
+        "extraFields": [
+            {
+                "name": "rawRight",
+                "default": "500",
+                "displayedName": "Raw right",
+                "isVisible": false,
+                "isEditable": false,
+                "isOptional": false
+            }
+        ],
+        "moduleExtraFields": [
+        ],
+        "lockedDrag": {
+            "useDragBase": true,
+            "useStart": false
+        },
+        "overflowBeforeStart": "AdjustBorder",
+        "overflowAfterEnd": "AdjustBorder",
+        "postEditNextTrigger": {
+            "useStart": false,
+            "useEnd": false
+        },
+        "postEditDoneTrigger": {
+            "useStart": true,
+            "useEnd": true
+        },
+        "decimalDigit": 2,
+        "entrySimilarityWeights": {
+            "name": 6.0,
+            "sample": 12.0,
+            "start": 1.0,
+            "end": 1.0,
+            "points": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "extras": [
+                0.0
+            ],
+            "tag": 0.0,
+            "threshold": 0.75
+        },
+        "properties": [
+            {
+                "name": "left",
+                "displayedName": {
+                    "en": "Offset",
+                    "zh": "左边界",
+                    "ja": "左ブランク",
+                    "ko": "오프셋"
+                },
+                "valueGetter": [
+                    "value = entry.points[3]",
+                    ""
+                ],
+                "valueSetter": [
+                    "entry.points[3] = value",
+                    "if (value < entry.start) {",
+                    "    entry.start = value",
+                    "}",
+                    ""
+                ],
+                "shortcutIndex": 0
+            },
+            {
+                "name": "ovl",
+                "displayedName": {
+                    "en": "Overlap",
+                    "zh": "重叠",
+                    "ja": "オーバーラップ",
+                    "ko": "오버랩"
+                },
+                "valueGetter": [
+                    "value = entry.points[2] - entry.points[3]",
+                    ""
+                ],
+                "valueSetter": [
+                    "newOverlap = value + entry.points[3]",
+                    "entry.points[2] = newOverlap",
+                    "if (newOverlap < entry.start) {",
+                    "    entry.start = newOverlap",
+                    "}",
+                    ""
+                ],
+                "shortcutIndex": 1
+            },
+            {
+                "name": "preu",
+                "displayedName": {
+                    "en": "Preutterance",
+                    "zh": "先行发声",
+                    "ja": "先行発声",
+                    "ko": "선행자음부"
+                },
+                "valueGetter": [
+                    "value = entry.points[1] - entry.points[3]",
+                    ""
+                ],
+                "valueSetter": [
+                    "entry.points[1] = value + entry.points[3]",
+                    ""
+                ],
+                "shortcutIndex": 2
+            },
+            {
+                "name": "fixed",
+                "displayedName": {
+                    "en": "Fixed",
+                    "zh": "固定",
+                    "ja": "固定範囲",
+                    "ko": "고정자음부"
+                },
+                "valueGetter": [
+                    "value = entry.points[0] - entry.points[3]",
+                    ""
+                ],
+                "valueSetter": [
+                    "entry.points[0] = value + entry.points[3]",
+                    ""
+                ],
+                "shortcutIndex": 3
+            },
+            {
+                "name": "right",
+                "displayedName": {
+                    "en": "Cutoff",
+                    "zh": "右边界",
+                    "ja": "右ブランク",
+                    "ko": "컷오프"
+                },
+                "valueGetter": [
+                    "if (entry.needSync || entry.end < 0) {",
+                    "    value = parseFloat(entry.extras[0])",
+                    "} else {",
+                    "    value = entry.points[3] - entry.end",
+                    "}",
+                    ""
+                ],
+                "valueSetter": [
+                    "if (value < 0) {",
+                    "    entry.end = -value + entry.points[3]",
+                    "} else {",
+                    "    entry.needSync = true",
+                    "    entry.end = -value",
+                    "    entry.extras[0] = value.toString()",
+                    "}",
+                    ""
+                ],
+                "shortcutIndex": 4
+            }
+        ],
+        "parser": {
+            "scope": "Entry",
+            "defaultEncoding": "Shift-JIS",
+            "extractionPattern": "(.*)=(.*),(.*),(.*),(.*),(.*),(.*)",
+            "variableNames": [
+                "sample",
+                "name",
+                "left",
+                "fixed",
+                "right",
+                "preu",
+                "ovl"
+            ],
+            "scripts": [
+                "if (typeof sample === 'undefined' || !sample) {",
+                "    error('Sample name is empty.')",
+                "}",
+                "if (typeof sample === 'undefined' || !name) {",
+                "    name = getNameWithoutExtension(sample)",
+                "}",
+                "offset = 0",
+                "if (ovl === '') {",
+                "    ovl = '0'",
+                "}",
+                "ovl = parseFloat(ovl)",
+                "if (ovl < 0) {",
+                "    offset = -ovl",
+                "}",
+                "if (left === '') {",
+                "    left = '0'",
+                "}",
+                "left = parseFloat(left)",
+                "start = left - offset",
+                "points = []",
+                "extras = []",
+                "if (fixed === '') {",
+                "    fixed = '0'",
+                "}",
+                "fixed = parseFloat(fixed)",
+                "if (fixed < 0) {",
+                "    fixed = 0",
+                "}",
+                "points.push(fixed + left)",
+                "if (right === '') {",
+                "    right = '0'",
+                "}",
+                "right = parseFloat(right)",
+                "rawRight = right // for restoring from a non-negative value (distance to sample end)",
+                "extras.push(rawRight)",
+                "if (right < 0) {",
+                "    end = left - right",
+                "} else {",
+                "    end = -right",
+                "}",
+                "if (preu === '') {",
+                "    preu = '0'",
+                "}",
+                "preu = parseFloat(preu)",
+                "if (preu < 0) {",
+                "    preu = 0",
+                "}",
+                "points.push(preu + left)",
+                "points.push(ovl + left)",
+                "points.push(left)",
+                "needSync = right >= 0",
+                "entry = new Entry(sample, name, start, end, points, extras, new Notes(), needSync)",
+                ""
+            ]
+        },
+        "writer": {
+            "scope": "Entry",
+            "format": "{sample}={name},{left},{fixed},{right},{preu},{ovl}",
+            "scripts": null
+        },
+        "parameters": [
+            {
+                "parameter": {
+                    "type": "boolean",
+                    "name": "useNegativeOvl",
+                    "label": {
+                        "en": "Allow negative overlap",
+                        "zh": "允许重叠为负值",
+                        "ja": "オーバーラップのマイナス値を許容する",
+                        "ko": "오버랩 음수값 허용하기"
+                    },
+                    "description": null,
+                    "enableIf": null,
+                    "defaultValue": true
+                },
+                "injector": [
+                    "labeler.fields[2].constraints[0].min = value ? null : 3",
+                    ""
+                ],
+                "changeable": true
+            },
+            {
+                "parameter": {
+                    "type": "enum",
+                    "name": "dragBase",
+                    "label": {
+                        "en": "Base for fixed-drag",
+                        "zh": "锁定拖动的基准参数",
+                        "ja": "連動ドラッグの基準",
+                        "ko": "고정 드래그의 기준 마커"
+                    },
+                    "description": null,
+                    "enableIf": null,
+                    "defaultValue": "Preutterance",
+                    "options": [
+                        "Left",
+                        "Overlap",
+                        "Preutterance",
+                        "Fixed"
+                    ],
+                    "optionDisplayedNames": [
+                        {
+                            "en": "Left",
+                            "zh": "左边界",
+                            "ja": "左ブランク",
+                            "ko": "왼쪽 끝"
+                        },
+                        {
+                            "en": "Overlap",
+                            "zh": "重叠",
+                            "ja": "オーバーラップ",
+                            "ko": "오버랩"
+                        },
+                        {
+                            "en": "Preutterance",
+                            "zh": "先行发声",
+                            "ja": "先行発声",
+                            "ko": "선행자음부"
+                        },
+                        {
+                            "en": "Fixed",
+                            "zh": "固定",
+                            "ja": "固定範囲",
+                            "ko": "고정자음부"
+                        }
+                    ]
+                },
+                "injector": [
+                    "if (value !== 'Preutterance') {",
+                    "    labeler.fields[1].dragBase = false",
+                    "}",
+                    "if (value === 'Fixed') {",
+                    "    labeler.fields[0].dragBase = true",
+                    "}",
+                    "if (value === 'Overlap') {",
+                    "    labeler.fields[2].dragBase = true",
+                    "}",
+                    "if (value === 'Left') {",
+                    "    labeler.lockedDrag.useDragBase = false",
+                    "    labeler.lockedDrag.useStart = true",
+                    "}",
+                    ""
+                ],
+                "changeable": true
+            },
+            {
+                "parameter": {
+                    "type": "boolean",
+                    "name": "useRootDirectory",
+                    "label": {
+                        "en": "Include samples under the root directory of the singer",
+                        "zh": "包括歌手根目录下的采样",
+                        "ja": "歌手のルートディレクトリ以下のサンプルを含める",
+                        "ko": "편집이 끝나면 다음 엔트리로 이동"
+                    },
+                    "description": null,
+                    "enableIf": null,
+                    "defaultValue": false
+                },
+                "injector": null,
+                "changeable": false
+            },
+            {
+                "parameter": {
+                    "type": "boolean",
+                    "name": "forceRecursive",
+                    "label": {
+                        "en": "Include children of child directories",
+                        "zh": "包括子文件夹的子文件夹",
+                        "ja": "子ディレクトリの子を含める",
+                        "ko": "하위 폴더 내부의 폴더까지 포함하기"
+                    },
+                    "description": {
+                        "en": "By default, only direct children of the root directory will be included due to restriction of UTAU. If you have samples in folders whose depth is greater than 1, please enable this option.",
+                        "zh": "由于 UTAU 的限制，默认情况下只有根目录的直接子文件夹会被包括。如果您的采样文件夹的深度大于 1，请启用此选项。",
+                        "ja": "UTAUの制限により、デフォルトではルートディレクトリの直接の子のみが含まれます。深さが1より大きいフォルダーにサンプルがある場合は、このオプションを有効にしてください。",
+                        "ko": "UTAU의 경우, 제약이 있어 한 겹의 하위 폴더까지만 포함시킬 수 있어요. 한 겹을 넘어가는 하위 폴더에 있는 샘플들을 편집해야 한다면, 이 항목을 활성화해 주세요. "
+                    },
+                    "enableIf": null,
+                    "defaultValue": false
+                },
+                "injector": null,
+                "changeable": false
+            },
+            {
+                "parameter": {
+                    "type": "enum",
+                    "name": "postEditNextTrigger",
+                    "label": {
+                        "en": "Go to next entry after editing",
+                        "zh": "编辑后跳转到下一个条目",
+                        "ja": "編集後に次のエントリーに移動する",
+                        "ko": "편집이 끝나면 다음 엔트리로 이동"
+                    },
+                    "description": {
+                        "en": "Please enable this action in `Preferences` -> `Editor` -> `Post-editing actions`, and choose `Use settings defined by the labeler` as the trigger.",
+                        "zh": "请在`环境设置`->`编辑器`->`编辑后动作`中启用此功能，并选择`使用标注器的设置`为`触发该行为的参数`。",
+                        "ja": "`環境設定`->`エディタ`->`編集後アクション`でこの機能を有効にし、`アクションを実行できるパラメータ`では`ラベラーの設定`を選択してください。",
+                        "ko": "활성화하려면 `환경설정` -> `에디터` -> `사전편집 동작`을 누른 후, `라벨러에 의해 정의된 설정 사용`을 선택해 주세요."
+                    },
+                    "enableIf": null,
+                    "defaultValue": "Disable",
+                    "options": [
+                        "Disable",
+                        "Left",
+                        "Overlap",
+                        "Preutterance",
+                        "Fixed",
+                        "Cutoff",
+                        "Any"
+                    ],
+                    "optionDisplayedNames": [
+                        {
+                            "en": "Disable",
+                            "zh": "禁用",
+                            "ja": "無効",
+                            "ko": "비활성"
+                        },
+                        {
+                            "en": "Left",
+                            "zh": "左边界",
+                            "ja": "左ブランク",
+                            "ko": "왼쪽 끝"
+                        },
+                        {
+                            "en": "Overlap",
+                            "zh": "重叠",
+                            "ja": "オーバーラップ",
+                            "ko": "오버랩"
+                        },
+                        {
+                            "en": "Preutterance",
+                            "zh": "先行发声",
+                            "ja": "先行発声",
+                            "ko": "선행자음부"
+                        },
+                        {
+                            "en": "Fixed",
+                            "zh": "固定",
+                            "ja": "固定範囲",
+                            "ko": "고정자음부"
+                        },
+                        {
+                            "en": "Cutoff",
+                            "zh": "右边界",
+                            "ja": "右ブランク",
+                            "ko": "컷오프"
+                        },
+                        {
+                            "en": "Any",
+                            "zh": "任意",
+                            "ja": "任意",
+                            "ko": "아무거나"
+                        }
+                    ]
+                },
+                "injector": [
+                    "if (value === 'Left') {",
+                    "    labeler.postEditNextTrigger = {'useStart': true}",
+                    "}",
+                    "if (value === 'Fixed') {",
+                    "    labeler.fields[0].triggerPostEditNext = true",
+                    "}",
+                    "if (value === 'Preutterance') {",
+                    "    labeler.fields[1].triggerPostEditNext = true",
+                    "}",
+                    "if (value === 'Overlap') {",
+                    "    labeler.fields[2].triggerPostEditNext = true",
+                    "}",
+                    "if (value === 'Cutoff') {",
+                    "    labeler.postEditNextTrigger = {'useEnd': true}",
+                    "}",
+                    "if (value === 'Any') {",
+                    "    labeler.postEditNextTrigger = {'useStart': true, 'useEnd': true}",
+                    "    labeler.fields[0].triggerPostEditNext = true",
+                    "    labeler.fields[1].triggerPostEditNext = true",
+                    "    labeler.fields[2].triggerPostEditNext = true",
+                    "}",
+                    ""
+                ],
+                "changeable": true
+            },
+            {
+                "parameter": {
+                    "type": "enum",
+                    "name": "postEditDoneTrigger",
+                    "label": {
+                        "en": "Mark entry as `Done` after editing",
+                        "zh": "编辑后标记为已完成条目",
+                        "ja": "編集後にエントリーを\"完了\"にする",
+                        "ko": "편집된 엔트리에 자동으로 \"완료\" 표시"
+                    },
+                    "description": {
+                        "en": "Please enable this action in `Preferences` -> `Editor` -> `Post-editing actions`, and choose `Use settings defined by the labeler` as the trigger.",
+                        "zh": "请在`环境设置`->`编辑器`->`编辑后动作`中启用此功能，并选择`使用标注器的设置`为`触发该行为的参数`。",
+                        "ja": "`環境設定`->`エディタ`->`編集後アクション`でこの機能を有効にし、`アクションを実行できるパラメータ`では`ラベラーの設定`を選択してください。",
+                        "ko": "활성화하려면 `환경설정` -> `에디터` -> `사전편집 동작`을 누른 후, `라벨러에 의해 정의된 설정 사용`을 선택해 주세요."
+                    },
+                    "enableIf": null,
+                    "defaultValue": "Any",
+                    "options": [
+                        "Disable",
+                        "Left",
+                        "Overlap",
+                        "Preutterance",
+                        "Fixed",
+                        "Cutoff",
+                        "Any"
+                    ],
+                    "optionDisplayedNames": [
+                        {
+                            "en": "Disable",
+                            "zh": "禁用",
+                            "ja": "無効",
+                            "ko": "비활성"
+                        },
+                        {
+                            "en": "Left",
+                            "zh": "左边界",
+                            "ja": "左ブランク",
+                            "ko": "왼쪽 끝"
+                        },
+                        {
+                            "en": "Overlap",
+                            "zh": "重叠",
+                            "ja": "オーバーラップ",
+                            "ko": "오버랩"
+                        },
+                        {
+                            "en": "Preutterance",
+                            "zh": "先行发声",
+                            "ja": "先行発声",
+                            "ko": "선행자음부"
+                        },
+                        {
+                            "en": "Fixed",
+                            "zh": "固定",
+                            "ja": "固定範囲",
+                            "ko": "고정자음부"
+                        },
+                        {
+                            "en": "Cutoff",
+                            "zh": "右边界",
+                            "ja": "右ブランク",
+                            "ko": "컷오프"
+                        },
+                        {
+                            "en": "Any",
+                            "zh": "任意",
+                            "ja": "任意",
+                            "ko": "아무거나"
+                        }
+                    ]
+                },
+                "injector": [
+                    "if (value === 'Disable') {",
+                    "    labeler.postEditDoneTrigger = {}",
+                    "    labeler.fields[0].triggerPostEditDone = false",
+                    "    labeler.fields[1].triggerPostEditDone = false",
+                    "    labeler.fields[2].triggerPostEditDone = false",
+                    "}",
+                    "if (value === 'Left') {",
+                    "    labeler.postEditDoneTrigger = {'useStart': true}",
+                    "    labeler.fields[0].triggerPostEditDone = false",
+                    "    labeler.fields[1].triggerPostEditDone = false",
+                    "    labeler.fields[2].triggerPostEditDone = false",
+                    "}",
+                    "if (value === 'Fixed') {",
+                    "    labeler.postEditDoneTrigger = {}",
+                    "    labeler.fields[1].triggerPostEditDone = false",
+                    "    labeler.fields[2].triggerPostEditDone = false",
+                    "}",
+                    "if (value === 'Preutterance') {",
+                    "    labeler.postEditDoneTrigger = {}",
+                    "    labeler.fields[0].triggerPostEditDone = false",
+                    "    labeler.fields[2].triggerPostEditDone = false",
+                    "}",
+                    "if (value === 'Overlap') {",
+                    "    labeler.postEditDoneTrigger = {}",
+                    "    labeler.fields[0].triggerPostEditDone = false",
+                    "    labeler.fields[1].triggerPostEditDone = false",
+                    "}",
+                    "if (value === 'Cutoff') {",
+                    "    labeler.postEditDoneTrigger = {'useEnd': true}",
+                    "    labeler.fields[0].triggerPostEditDone = false",
+                    "    labeler.fields[1].triggerPostEditDone = false",
+                    "    labeler.fields[2].triggerPostEditDone = false",
+                    "}",
+                    ""
+                ],
+                "changeable": true
+            }
+        ],
+        "projectConstructor": {
+            "scripts": [
+                "// `root` is the input File object indicating the root sample directory.",
+                "// `acceptedSampleExtensions` is provided as list of strings indicating the accepted extensions of sample files",
+                "let modules = []",
+                "let rootModule = null",
+                "",
+                "function putFolder(folder, parentPath, depth) {",
+                "    let thisName = depth === 0 ? '' : (depth === 1 ? folder.getName() : parentPath + '/' + folder.getName())",
+                "    let samples = folder.listChildFiles().filter(file => acceptedSampleExtensions.includes(file.getExtension()))",
+                "    if (samples.length > 0) {",
+                "        let otoFile = folder.resolve('oto.ini')",
+                "        let otoPath = otoFile.getAbsolutePath()",
+                "        let def = new ModuleDefinition(",
+                "                thisName,",
+                "                folder.getAbsolutePath(),",
+                "                samples.map(f => f.getName()),",
+                "                [otoPath],",
+                "                otoPath",
+                "        )",
+                "        let included = true",
+                "        if (depth === 0) {",
+                "            included = params['useRootDirectory']",
+                "            rootModule = def",
+                "        }",
+                "        if (depth > 1) {",
+                "            included = otoFile.exists() || params['forceRecursive']",
+                "        }",
+                "        if (included) {",
+                "            modules.push(def)",
+                "        }",
+                "    }",
+                "    folder.listChildDirectories().forEach(f => putFolder(f, thisName, depth + 1))",
+                "}",
+                "",
+                "putFolder(root, '', 0)",
+                "if (rootModule && modules.length === 0) {",
+                "    modules.push(rootModule)",
+                "}",
+                "if (modules.length === 0) {",
+                "    error({",
+                "        en: 'No sample files found. Please check the labeler settings to ensure your sample folders are included.',",
+                "        zh: '未找到采样文件。请检查标注器设置以确保您的采样文件夹被包括在内。',",
+                "        ja: 'サンプルファイルが見つかりませんでした。ラベラーの設定でサンプルフォルダーが含まれていることを確認してください。',",
+                "        ko: '샘플 파일을 찾지 못했습니다. 라벨러 설정에서 샘플 폴더가 잘 포함되어 있는지 확인해 주세요.'",
+                "    })",
+                "}",
+                ""
+            ]
+        },
+        "quickProjectBuilders": [
+            {
+                "name": "default",
+                "displayedName": {
+                    "en": "Edit UTAU singer",
+                    "zh": "编辑 UTAU singer",
+                    "ja": "UTAU singer を編集する",
+                    "ko": "UTAU singer 파일 편집"
+                },
+                "description": {
+                    "en": "Select your UTAU singer folder to start quick editing.",
+                    "zh": "选择您的 UTAU singer 文件夹以开始快捷编辑。",
+                    "ja": "UTAU singer フォルダーを選択して、クイック編集を開始します。",
+                    "ko": "UTAU singer 폴더를 선택하여 빠른 편집을 시작하세요."
+                },
+                "extension": "",
+                "scripts": [
+                    "console.log(\"input=\", JSON.stringify(input))",
+                    "console.log(\"savedParams=\", JSON.stringify(savedParams))",
+                    "",
+                    "sampleDirectory = input",
+                    "projectName = sampleDirectory.getName() + \"_quickedit.lbp\"",
+                    "projectFile = sampleDirectory.resolve(projectName)",
+                    "encoding = \"Shift-JIS\"",
+                    ""
+                ]
+            }
+        ],
+        "resourceFiles": [
+        ]
+    },
+    "labelerParams": null,
+    "encoding": "UTF-8",
+    "multipleEditMode": false,
+    "modules": [
+        {
+            "name": "",
+            "sampleDirectory": "",
+            "entries": [
+                {
+                    "sample": "a.wav",
+                    "name": "a.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ba.wav",
+                    "name": "ba.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "be.wav",
+                    "name": "be.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "bi.wav",
+                    "name": "bi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "bo.wav",
+                    "name": "bo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "breathe-in.wav",
+                    "name": "breathe-in.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "breathe-out.wav",
+                    "name": "breathe-out.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "bu.wav",
+                    "name": "bu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "bya.wav",
+                    "name": "bya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "bye.wav",
+                    "name": "bye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "byo.wav",
+                    "name": "byo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "byu.wav",
+                    "name": "byu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "cha.wav",
+                    "name": "cha.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "che.wav",
+                    "name": "che.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "chi.wav",
+                    "name": "chi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "cho.wav",
+                    "name": "cho.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "chu.wav",
+                    "name": "chu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "da.wav",
+                    "name": "da.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "de.wav",
+                    "name": "de.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "di.wav",
+                    "name": "di.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "do.wav",
+                    "name": "do.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "du.wav",
+                    "name": "du.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "dyu.wav",
+                    "name": "dyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "e.wav",
+                    "name": "e.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fa.wav",
+                    "name": "fa.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fe.wav",
+                    "name": "fe.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fi.wav",
+                    "name": "fi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fo.wav",
+                    "name": "fo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fu.wav",
+                    "name": "fu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fya.wav",
+                    "name": "fya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fyo.wav",
+                    "name": "fyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "fyu.wav",
+                    "name": "fyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ga.wav",
+                    "name": "ga.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ge.wav",
+                    "name": "ge.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gi.wav",
+                    "name": "gi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "go.wav",
+                    "name": "go.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gu.wav",
+                    "name": "gu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gya.wav",
+                    "name": "gya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gye.wav",
+                    "name": "gye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gyo.wav",
+                    "name": "gyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "gyu.wav",
+                    "name": "gyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ha.wav",
+                    "name": "ha.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "he.wav",
+                    "name": "he.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "hi.wav",
+                    "name": "hi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ho.wav",
+                    "name": "ho.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "hya.wav",
+                    "name": "hya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "hye.wav",
+                    "name": "hye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "hyo.wav",
+                    "name": "hyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "hyu.wav",
+                    "name": "hyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "i.wav",
+                    "name": "i.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ja.wav",
+                    "name": "ja.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "je.wav",
+                    "name": "je.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ji.wav",
+                    "name": "ji.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "jo.wav",
+                    "name": "jo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ju.wav",
+                    "name": "ju.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ka.wav",
+                    "name": "ka.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ke.wav",
+                    "name": "ke.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ki.wav",
+                    "name": "ki.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ko.wav",
+                    "name": "ko.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ku.wav",
+                    "name": "ku.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "kya.wav",
+                    "name": "kya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "kye.wav",
+                    "name": "kye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "kyo.wav",
+                    "name": "kyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "kyu.wav",
+                    "name": "kyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "l.wav",
+                    "name": "l.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "la.wav",
+                    "name": "la.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "le.wav",
+                    "name": "le.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "li.wav",
+                    "name": "li.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "lo.wav",
+                    "name": "lo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "lu.wav",
+                    "name": "lu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ma.wav",
+                    "name": "ma.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "me.wav",
+                    "name": "me.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "mi.wav",
+                    "name": "mi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "mo.wav",
+                    "name": "mo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "mu.wav",
+                    "name": "mu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "mya.wav",
+                    "name": "mya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "mye.wav",
+                    "name": "mye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "myo.wav",
+                    "name": "myo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "myu.wav",
+                    "name": "myu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "n.wav",
+                    "name": "n.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "na.wav",
+                    "name": "na.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ne.wav",
+                    "name": "ne.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ni.wav",
+                    "name": "ni.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "no.wav",
+                    "name": "no.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "nu.wav",
+                    "name": "nu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "nya.wav",
+                    "name": "nya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "nye.wav",
+                    "name": "nye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "nyo.wav",
+                    "name": "nyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "nyu.wav",
+                    "name": "nyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "o.wav",
+                    "name": "o.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pa.wav",
+                    "name": "pa.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pe.wav",
+                    "name": "pe.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pi.wav",
+                    "name": "pi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "po.wav",
+                    "name": "po.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pu.wav",
+                    "name": "pu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pya.wav",
+                    "name": "pya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pye.wav",
+                    "name": "pye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pyo.wav",
+                    "name": "pyo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "pyu.wav",
+                    "name": "pyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ra.wav",
+                    "name": "ra.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "re.wav",
+                    "name": "re.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ri.wav",
+                    "name": "ri.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ro.wav",
+                    "name": "ro.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ru.wav",
+                    "name": "ru.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "rya.wav",
+                    "name": "rya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "rye.wav",
+                    "name": "rye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ryo.wav",
+                    "name": "ryo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ryu.wav",
+                    "name": "ryu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "sa.wav",
+                    "name": "sa.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "se.wav",
+                    "name": "se.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "sha.wav",
+                    "name": "sha.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "she.wav",
+                    "name": "she.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "shi.wav",
+                    "name": "shi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "sho.wav",
+                    "name": "sho.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "shu.wav",
+                    "name": "shu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "si.wav",
+                    "name": "si.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "so.wav",
+                    "name": "so.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "su.wav",
+                    "name": "su.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ta.wav",
+                    "name": "ta.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "te.wav",
+                    "name": "te.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ti.wav",
+                    "name": "ti.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "to.wav",
+                    "name": "to.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tsa.wav",
+                    "name": "tsa.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tse.wav",
+                    "name": "tse.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tsi.wav",
+                    "name": "tsi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tso.wav",
+                    "name": "tso.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tsu.wav",
+                    "name": "tsu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tu.wav",
+                    "name": "tu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "tyu.wav",
+                    "name": "tyu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "u.wav",
+                    "name": "u.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "va.wav",
+                    "name": "va.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ve.wav",
+                    "name": "ve.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "vi.wav",
+                    "name": "vi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "vo.wav",
+                    "name": "vo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "vu.wav",
+                    "name": "vu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "wa.wav",
+                    "name": "wa.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "we.wav",
+                    "name": "we.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "wi.wav",
+                    "name": "wi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "wo.wav",
+                    "name": "wo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ya.wav",
+                    "name": "ya.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ye.wav",
+                    "name": "ye.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "yo.wav",
+                    "name": "yo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "yu.wav",
+                    "name": "yu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "za.wav",
+                    "name": "za.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "ze.wav",
+                    "name": "ze.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "zi.wav",
+                    "name": "zi.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "zo.wav",
+                    "name": "zo.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                },
+                {
+                    "sample": "zu.wav",
+                    "name": "zu.wav",
+                    "start": 100.0,
+                    "end": 1100.0,
+                    "points": [
+                        200.0,
+                        160.0,
+                        130.0,
+                        100.0
+                    ],
+                    "extras": [
+                        "-1000"
+                    ],
+                    "notes": {
+                        "done": false,
+                        "star": false,
+                        "tag": ""
+                    },
+                    "needSync": false
+                }
+            ],
+            "currentIndex": 143,
+            "extras": {
+            },
+            "rawFilePath": "oto.ini",
+            "entryFilter": null
+        }
+    ],
+    "currentModuleIndex": 0,
+    "autoExport": true
+}

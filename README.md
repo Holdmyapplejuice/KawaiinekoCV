@@ -9,4 +9,6 @@ she is a Cat-girl/kemonomimi wearing mostly in brown EGL fashion, BUT NEW COSTUM
 
 her pronouns are she/feminine-adjacent, headcanons and identity variations are a-ok with me.
 
+made with openutau priority and linux compatibility, let me know if any problems arise with the voicebank, the default phonemise should work.
+
 - holdmyapplejuice

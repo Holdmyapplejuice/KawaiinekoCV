@@ -11,6 +11,6 @@ She is a Cat-girl/kemonomimi wearing mostly in brown EGL fashion, BUT NEW COSTUM
 
 Her pronouns are she/feminine-adjacent, headcanons and identity variations are a-ok with me.
 
-made with openutau priority and linux compatibility, let me know if any problems arise with the voicebank; the default phonemise should work. Keep in mind this is a UTF-8 voice bank, and I haven't made a version with Japanese aliases, but who needs that when we all have ASCII? Just find a phoneme that works, I also have custom noises like 'breath-in' and '-out' and L syllables along with 'x' syllables.
+made with openutau priority and linux compatibility, let me know if any problems arise with the voicebank; the default phonemise should work. Keep in mind this is a UTF-8 voice bank, and I haven't made a version with Japanese aliases, but who needs that when we all have ASCII? Just find a phoneme that works, I also have custom noises like 'breath-in' and '-out' and L syllables along with some other syllables.
 
 - holdmyapplejuice

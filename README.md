@@ -17,6 +17,6 @@ Keep in mind this is a UTF-8 voice bank, and I haven't made a version with Japan
 
 I also have custom noises like 'breath-in' and 'breath-out' and 'l' syllables, along with some other syllables. no... 'la li lu le lo' have nothing to do wth anything, but it's kinda funny lmaoo.
 
-Should work with most languages, as I have a lot of standard syllables, Japanese, I have all the standard syllables, you'd have to use romaji though, but you can definitely use the Japanese to romaji in openutau or make a new oto.ini. Kurdish? hell yeah, Toki Pona, I mean, if you can really, go wild lmaooo. should be more IPA adherent.
+Should work with most languages, as I have a lot of standard syllables, Japanese, I have all the standard syllables, you'd have to use romaji though, but you can definitely use the Japanese to romaji in openutau or make a new oto.ini. Kurdish? hell yeah, Toki Pona, I mean, if you can really, go wild lmaooo. should be more IPA adherent while accounting for most keyboards.
 
 - holdmyapplejuice

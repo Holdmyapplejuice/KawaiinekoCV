@@ -1,5 +1,5 @@
 # KawaiinekoCV
-voicebank for utau based on my vtuber avatar whose full name is: Banicat hello kitty, matcha banana mochi fluffy kira kira twinkle MAX`300 star love daisy hime not-atlas jugemu jugemu unrai matsu furai matsu fuschia tempestimissio miku U.U.F.O la campanella maho shoujou no hosakan Kawaiineko. heck of a name aint it?
+CUSTOM CV voicebank for utau based on my vtuber avatar whose full name is: Banicat hello kitty, matcha banana mochi fluffy kira kira twinkle MAX`300 star love daisy hime not-atlas jugemu jugemu unrai matsu furai matsu fuschia tempestimissio miku U.U.F.O la campanella maho shoujou no hosakan Kawaiineko. heck of a name aint it?
 
 do whatever: as long as it's not bigoted, very insensitive or illegal, Bani is 18+, but please try not to make 'illicit' images of her, but if so, as I can't stop it, keep it away from minors and keep the depiction of her 18+ if you're drawing something you wouldn't want shown on your school or work computers, thanks. 
 

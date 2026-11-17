@@ -3,7 +3,7 @@ CUSTOM CV voicebank for utau based on my vtuber avatar whose full name is: Banic
 
 do whatever: as long as it's not bigoted, very insensitive or illegal, Bani is 18 or above agewise, but please try not to make 'illicit' images of her, but if so, as I can't stop it, keep it away from minors and keep the depiction of her 18+ if you're drawing something you wouldn't want shown on your school or work computers, thanks. 
 
-Use wherever really, lmk if you wanna improve, I mean feel free to, I guess.
+Use wherever really, lmk if you wanna improve, I mean feel free to, I guess. but keep in mind - don't nick it for THOSE ai models, i mean diffsinger is fine but i wanna work on that on my own. big companies must talk to me however.
 
 She also has the power to embody and use cringe - skibidi yeet yolo swag meh dudes.
 
